@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Final</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+        }
+		
+		   #playButton {
+            background-color: #4CAF50; /* verde suave */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #playButton:hover {
+            background-color: #45a049; /* un poco más oscuro al pasar el mouse */
+        }	
+		
+        header {
+            text-align: center;
+            padding: 40px;
+            background: #F0C9F5;
+            font-size: 40px;
+            font-weight: bold;
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .contenedor {
+            width: 90%;
+            max-width: 900px;
+            margin: auto;
+            background: #e5b5eb;
+            padding: 20px;
+            border-radius: 15px;
+            margin-top: 20px;
+        }
+        .movimiento {
+            animation: mover 4s infinite alternate;
+        }
+        @keyframes mover {
+            from {transform: translateX(-10px);} 
+            to {transform: translateX(10px);} 
+        }
+        img.moverImg {
+            width: 500px;
+            display: block;
+            margin: auto;
+            animation: flotar 3s infinite ease-in-out alternate;
+        }
+        @keyframes flotar {
+            from { transform: translateY(-10px); }
+            to { transform: translateY(10px); }
+        }
+        video {
+            width: 100%;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        form {
+            background: rgba(255,255,255,0.1);
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: none;
+        }
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+
+<header class="movimiento">Mary Kay</header>
+
+<div class="contenedor">
+    <h2>LA MEJOR OPORTUNIDAD</h2>
+	<p>Por más de 55 años, en Mary Kay México, Nuestra Misión ha sido Enriquecer la Vida de las Mujeres de nuestro país. A través del legado de nuestra fundadora Mary Kay Ash, nuestra Empresa ofrece la mejor Oportunidad de Negocio dedicada al Cuidado de la Piel y maquillaje de calidad y brinda las herramientas necesarias basadas en principios y valores enfocados al trabajo en equipo, el respeto a la individualidad, la honestidad y transparencia en nuestras relaciones.</p>	
+	<p>Nuestra Visión y principal motor es que cada mujer diga que ama Mary Kay por su gratificante Oportunidad de Negocio, sus productos irresistibles y más vendidos, así como por su impacto positivo en la comunidad. Hoy tú puedes enriquecer tu vida y la de las mujeres y niños de México y el mundo. ¿Quieres hacer realidad tus sueños? ¡Con Mary Kay puedes lograrlo!</p>
+	<h2> Lo mas vendido>
+	<img class="moverImg" src="1.png">
+	<p align=center>Crema Facial para el Día Efecto Reparador FPS 30 Volu-Firm® TimeWise Repair®
+48 g</p>
+	<p align=center>$ 809.00 </p>
+	
+	<img class="moverImg" src="2.png">
+	<p align=center>Polvo Suelto Traslúcido Mary Kay®
+11 g
+</p>
+	<p align=center>
+$ 299.00</p>
+
+<img class="moverImg" src="3.png">
+	<p align=center>Mary Kay Joy Emotion Scent® Eau de Parfum</p>
+	<p align=center>$ 436.00 </p>
+
+	<h1 align="center">Formulario De Compra"</h1>
+
+<form action="mailto:marher0901@gmail.com" method="post" enctype="text/plain">
+
+    <!-- ENTRADA -->
+    <p>Producto:<br>
+        <select name="Entrada" size="1">
+            <option value="Ninguna">Ninguna</option>
+            <option value="Crema Facial">Crema Facial</option>
+            <option value="Polvo Translucido">Polvo Translucido</option>
+            <option value="Joy Emotion Scent">Joy Emotion Scent</option>
+        </select>
+    </p>
+
+	Cantidad:<br>
+        <input type="text" name="Cantidad" maxlength="15"><br><br>
+
+    <!-- BOTONES -->
+    <input type="submit" value="Enviar datos">
+    <input type="reset" value="Borrar datos">
+
+</form>
+
+	<h2> Inicia en Grande con Enero Rosa</h2>
+    <video controls src="Inicia en Grande con Enero Rosa.mp4"></video>
+
+    <h2>Formulario De Contacto</h2>
+    <form action="mailto:marher0901@gmail.com" method="post" enctype="text/plain">
+   Nombre:<br>
+        <input type="text" name="Nombre" maxlength="15"><br><br>
+
+        Primer Apellido:<br>
+        <input type="text" name="Primer_Apellido" maxlength="15"><br><br>
+
+        Segundo Apellido:<br>
+        <input type="text" name="Segundo_Apellido" maxlength="15"><br><br>
+
+        Domicilio:<br>
+        <input type="text" name="Domicilio" size="40" maxlength="30"><br><br>
+	  
+	    Numero De Celular:<br>
+        <input type="text" name="Numero" size="40" maxlength="30"><br><br>
+
+        Sexo: &nbsp;
+        Hombre <input type="radio" name="Sexo" value="Hombre">
+        &nbsp;
+        Mujer <input type="radio" name="Sexo" value="Mujer"><br><br>
+
+    </form>
+
+    
+</div>
+
+</body>
+</html>
